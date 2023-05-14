@@ -30,6 +30,8 @@ First of all, you need python for this, so download it first.
 Then execute the following command to install the needed libraries:
 ```shell
 pip install pyautogui keyboard
+pip install pillow
+pip install opencv-python
 ```
 Once they are installed you can do the following:
 - go to a terminal
