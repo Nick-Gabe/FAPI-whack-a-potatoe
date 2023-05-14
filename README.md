@@ -23,6 +23,8 @@ The script uses confidence factors, such as if the colors are similar, if the pi
 ![potato eye](./img/eye.png)
 - Replace the eye image inside img/eye.png with the one you made.
 - Now the resolution should be the same, so the script will work properly.
+- You may also neeed to update img/game_board.png if the script is not working properly, just like below:
+<img src="./img/game_board.png" alt="store" width="200px">
 
 ## 🚀 How to use the script
 
@@ -43,9 +45,9 @@ Once they are installed you can do the following:
 python script.py
 ```
 It will start the script and say the keybindings to start and stop.
-It starts as **STOPPED** by default, so you just need to press the start key for it to start clicking those potatoes. And when you're not using, just press the stop key.
+It starts as **STOPPED** by default, so you just need to press the start key (`F8` by default) for it to start clicking those potatoes. And when you're not using, just press the stop key (`F8` by default).
 
-If you want to stop the script entirely, go into the terminal you used to start the program and press `Ctrl + C`, it will shutdown the process.
+If you want to stop the script entirely press `F10` or go into the terminal you used to start the program and press`Ctrl + C`, it will shutdown the process.
 
 ## 🧑‍💻 How it works
 
@@ -53,6 +55,6 @@ The script uses mainly `PyAutoGUI` to handle the image search and screen clicks.
 
 But because the confidence isn't 100%, it will allow the image to be true even if some small things are different, so after some testing 0.8 is a good value because it can find normal potatoes and the special ones aswell, while not clicking green or red ones.
 
-It also uses the `keyboard` library to handle keyboard presses, because having to `Ctrl + C` while your mouse is clicking everywhere is not a good idea... Instead when you press a specific key _(f8 by default)_ it will start or stop the script.
+It also uses the `keyboard` library to handle keyboard presses, because having to `Ctrl + C` while your mouse is clicking everywhere is not a good idea... Instead when you press a specific key (`F8` by default) it will start or stop the script.
 
 There are multiple images in the img folder because they might be useful incase you're doing extra automations, for example automatically starting the round when the timer reaches to 0.
